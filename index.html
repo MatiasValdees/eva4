@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eva 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="menu">
+        <section class="menu_container">
+            <h1 class="menu_logo">Eva 3</h1>
+            <ul class="menuLinks">
+                <li class="menu_item">
+                    <a href="test.html" class="menuLink">Test PHP</a>
+                </li>
+                <ul class="menuLinks">
+                    <li class="menu_item menu_item--show">
+                        <a  class="menuLink">Asignaciones <img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_subItem">
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside" id="btnAddAsignacion">Agregar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Modificar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Eliminar</a>
+                            </li>
+                            <hr>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Buscar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item menu_item--show">
+                        <a href="" class="menuLink">Métodos <img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_subItem">
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Método NWC</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Método Mínimos Costos</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Método de Vogel</a>
+                            </li>
+                            <hr>
+                        </ul>
+                    </li>
+
+                    <li class="menu_item menu_item--show">
+                        <a href="" class="menuLink">Bodegas <img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_subItem">
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Agregar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Modificar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Eliminar</a>
+                            </li>
+                            <hr>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Buscar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_item menu_item--show">
+                        <a href="" class="menuLink">Fábricas <img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_subItem">
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Agregar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Modificar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Eliminar</a>
+                            </li>
+                            <hr>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Buscar</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_item menu_item--show">
+                        <a href="" class="menuLink">Transportes <img src="assets/arrow.svg" class="menu_arrow"></a>
+                        <ul class="menu_subItem">
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Agregar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Modificar</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Eliminar</a>
+                            </li>
+                            <hr>
+                            <li class="menu_inside">
+                                <a class="menuLink menuLink--inside">Buscar</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+    </nav>
+
+    <div class="containerModal" id="containerModal">
+        <div class="modal">
+            <section class="titleAndButton">
+                <h2>Realizar Asignación</h2> <img src="assets/x.svg" class="btnClose" id="btnClose">
+            </section>
+            <div id="containerModalRootFab">
+                <h4>Seleccione cantidad de fábricas:</h4>
+                <br>
+                <section class="containerButtons">
+                    <button class="button buttonFab" value="1" id="btnCantFab1">1</button>
+                    <button class="button buttonFab" value="2" id="btnCantFab2">2</button>
+                    <button class="button buttonFab" value="3" id="btnCantFab3">3</button>
+                    <button class="button buttonFab" value="4" id="btnCantFab4">4</button>
+                    <button class="button buttonFab" value="5" id="btnCantFab5">5</button>
+                    <button class="button buttonFab" value="6" id="btnCantFab6">6</button>
+                </section>
+            </div>
+            <div id="containerModalRootBod" class="containerModalRootBod">
+                <h4>Seleccione cantidad de Bodegas:</h4>
+                <br>
+                <section class="containerButtons">
+                    <button class="button buttonBod" value="1" id="btnCantBod1">1</button>
+                    <button class="button buttonBod" value="2" id="btnCantBod2">2</button>
+                    <button class="button buttonBod" value="3" id="btnCantBod3">3</button>
+                    <button class="button buttonBod" value="4" id="btnCantBod4">4</button>
+                    <button class="button buttonBod" value="5" id="btnCantBod5">5</button>
+                    <button class="button buttonBod" value="6" id="btnCantBod6">6</button>
+                </section>
+            </div>
+            <div class="cantFab" id="cantFab">
+                <p style="margin-bottom: 20px;">Cantidad de produccion por Fabrica</p>
+                <form class="containerFab" id="containerFab">
+                </form>
+                <div class="containerButton">
+                    <button id="okFab" class="btn okFab">Aceptar</button>
+                    <button id="returnFab" class="btn returnFab">Volver</button>
+                </div>
+
+            </div>
+            <div class="cantFab" id="cantBod">
+                <p style="margin-bottom: 20px;">Cantidad de Alamecenamiento por Bodega</p>
+                <form class="containerFab" id="containerBod">    
+                </form>
+                <div class="containerButton">
+                    <button id="okBod" class="btn okFab">Aceptar</button>
+                    <button id="returnBod" class="btn returnFab">Volver</button>
+                </div>                
+            </div>
+
+        </div>
+    </div>
+
+    <div id="View" class="view">
+        <table id="table"></table>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+

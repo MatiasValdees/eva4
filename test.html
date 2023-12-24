@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Datos a la BD</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <h1>Enviar Datos a la BD</h1>
+    <hr>
+    <a href="verdatos.html">Ver Datos</a>
+    <form id="miFormulario">
+        <label for="dato1">Dato 1:</label>
+        <input type="number" id="dato1" name="dato1" required>
+        <label for="dato2">Dato 2:</label>
+        <input type="number" id="dato2" name="dato2" required>
+        <!-- Agrega más campos según sea necesario -->
+        <button type="button" onclick="enviarDatos()">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
